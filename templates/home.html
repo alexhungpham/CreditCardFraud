@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Card Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+  
+</head>
+
+
+
+<body>
+    <div class="login">
+        <h1>Predick CC Fraud</h1>
+
+
+
+        <!-- Form to enter new data for predictions-->
+        <form action="{{url_for('predict')}}"method="POST">
+            <input type="text" name="Time" placeholder="Time" required="required"/><br>
+            <input type="text" name="Vdata" placeholder="Vdata" required="required"/>
+            <!-- <input type="text" name="V2" placeholder="V2" required="required"/>
+            <input type="text" name="V3" placeholder="V3" required="required"/>
+            <input type="text" name="V4" placeholder="V4" required="required"/>
+            <input type="text" name="V5" placeholder="V5" required="required"/> 
+            <input type="text" name="V6" placeholder="V6" required="required"/>
+            <input type="text" name="V7" placeholder="V7" required="required"/>
+            <input type="text" name="V8" placeholder="V8" required="required"/>
+            <input type="text" name="V9" placeholder="V9" required="required"/>
+            <input type="text" name="V10" placeholder="V10" required="required"/><br>
+            <input type="text" name="V11" placeholder="V11" required="required"/>
+            <input type="text" name="V12" placeholder="V12" required="required"/>
+            <input type="text" name="V13" placeholder="V13" required="required"/>
+            <input type="text" name="V14" placeholder="V14" required="required"/>
+            <input type="text" name="V15" placeholder="V15" required="required"/>
+            <input type="text" name="V16" placeholder="V16" required="required"/>
+            <input type="text" name="V17" placeholder="V17" required="required"/>
+            <input type="text" name="V18" placeholder="V18" required="required"/>
+            <input type="text" name="V19" placeholder="V19" required="required"/>
+            <input type="text" name="V20" placeholder="V20" required="required"/><br>
+            <input type="text" name="V21" placeholder="V21" required="required"/>
+            <input type="text" name="V22" placeholder="V22" required="required"/>
+            <input type="text" name="V23" placeholder="V23" required="required"/>
+            <input type="text" name="V24" placeholder="V24" required="required"/>
+            <input type="text" name="V25" placeholder="V25" required="required"/>
+            <input type="text" name="V26" placeholder="V26" required="required"/>
+            <input type="text" name="V27" placeholder="V27" required="required"/>
+            <input type="text" name="V28" placeholder="V28" required="required"/><br> -->
+            <input type="text" name="Amount" placeholder="Amount" required="required"/>
+            <input type="text" name="Class" placeholder="Class" required="required"/><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predick</button>
+        </form>
+    </div>
+    {{pred}}
+</body>
+</html>
+
+
+
+
+
+<!-- "Time","V1","V2","V3","V4","V5","V6","V7","V8","V9","V10","V11","V12","V13","V14","V15","V16","V17","V18","V19","V20","V21","V22","V23","V24","V25","V26","V27","V28","Amount","Class -->
